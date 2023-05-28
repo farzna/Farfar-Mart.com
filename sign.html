@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href ="Far_style.css">
+        <title>Signup</title>
+    </head>
+    <body>
+
+        <form>
+         <fieldset>
+            <legend>Registration Form</legend>
+            Full Name:
+            <input type="text" id="fname" name="fname"> <br><br>
+            Username:
+            <input type="text" id="uname" name="uname"><br><br>
+            Gender:
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br><br>
+            Password:
+            <input type="password" id="psword" name="psword"><br><br>
+            Birthday:
+            <input type="date" id="date" name="date"><br><br>
+            Email:
+            <input type="email" id="email" name="email"><br><br>
+           
+         </fieldset><br>
+            
+         <button onclick="thank()">Submit</button>
+         <button onclick="reset">Reset</button>
+
+        </form>
+      
+        <script>
+
+            function thank(){
+                alert("Thank you for submitting your response")
+            }
+
+        </script>
+        
+    </body>
+</html>

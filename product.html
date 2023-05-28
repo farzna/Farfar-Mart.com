@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Product</title>
+
+        <style>
+            h1{
+              font-variant:small-caps;
+              font-size:50px;
+              color:darkkhaki;
+              text-align: center;
+            }
+
+            .shop-items{
+                background-color:white;
+                border-radius: 5rem;
+                text-align: center;
+                padding: 3rem 2rem;
+            }
+            .shop-item-title{
+              display: block;
+              width: 100%;
+              text-align: center;
+              font-weight: bold;
+              font-size: 1.5em;
+              color: #333;
+              margin-bottom: 15px;
+            }
+            .shop-item-details{
+                background-color:antiquewhite;
+                align-items: center;
+                border-radius: 5px;
+            }
+             .cart-header {
+             font-weight: bold;
+             font-size: 1.25em;
+             color:black;
+             }
+
+             .cart-column {
+              display: flex;
+              align-items: center;
+              border-bottom: 1px solid black;
+              margin-right: 1.5em;
+              padding-bottom: 10px;
+               margin-top: 10px;
+              }
+
+              .cart-row {
+              display: flex;
+              }
+
+             .cart-item {
+             width: 45%;
+             }
+
+             .cart-price {
+             width: 20%;
+             font-size: 1.2em;
+             color:black;
+             }
+
+             .cart-quantity {
+             width: 35%;
+             }
+
+             .cart-item-title {
+              color:black;
+              margin-left: .5em;
+              font-size: 1.2em;
+              }
+
+             .cart-item-image {
+               width: 75px;
+               height: auto;
+               border-radius: 10px;
+             }
+
+             
+             .cart-total {
+               text-align: end;
+               margin-top: 10px;
+               margin-right: 10px;
+              }
+
+             .cart-total-title {
+              font-weight: bold;
+              font-size: 1.5em;
+              color: black;
+              margin-right: 20px;
+              }
+
+             .cart-total-price {
+              color: #333;
+              font-size: 1.1em;
+              }
+        </style>
+
+     <script src="Far.js"></script>
+
+    </head>
+    <body>
+        <br><br><h1>Product</h1><br><br>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Strawberry</span>
+                <img class="shop-item-image" src="strawberry.jpg" width="200" height="200">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">RM5.00</span><br><br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    <br><br>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Apple</span>
+                <img class="shop-item-image" src="apple.jpg" width="200" height="200">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">RM4.50</span><br><br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    <br><br>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Cabbage</span>
+                <img class="shop-item-image" src="cabbage.jpeg" width="200" height="200">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">RM7.50</span><br><br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    <br><br>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Cauliflower</span>
+                <img class="shop-item-image" src="cauliflower.jpg" width="200" height="200">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">RM6.50</span><br><br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    <br><br>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Chicken</span>
+                <img class="shop-item-image" src="chicken.jpg" width="200" height="200">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">RM15.00</span><br><br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    <br><br>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Meat</span>
+                <img class="shop-item-image" src="meat.jpg" width="200" height="200">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">RM18.00</span><br><br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">RM0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+     </section>
+    </body>
+
+</html>

@@ -1,0 +1,82 @@
+body{
+background-image: url("im7.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+background-position-y:top;
+background-attachment:local;
+}
+
+ h1{
+    font-variant:small-caps;
+    font-size:40px;
+    color:darkgoldenrod;
+    text-align:center;
+    /*border: 3px outset black;
+    outline-style:groove;
+    margin: 30px;*/  
+}
+
+.header-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-2 .sign a {
+    /*font-variant:small-caps;*/
+    font-size:30px;
+    color:rgb(198, 189, 60);
+    outline-style:groove;
+    border: 3px outset black;
+    margin:60px;
+    padding-left:110px;
+    padding-right:110px;
+}
+
+.header-2 .pro a{
+    /*font-variant:small-caps;*/
+    font-size:30px;
+    color:rgb(198, 189, 60);
+    outline-style:groove;
+    border: 3px outset black;
+    margin:60px;
+    padding-left:106px;
+    padding-right:106px;
+}
+
+
+.header-2 .deal a{
+    /*font-variant:small-caps;*/
+    font-size:30px;
+    color:rgb(198, 189, 60);
+    outline-style:groove;
+    border: 3px outset black;
+    margin:60px;
+    padding-left:125px;
+    padding-right:125px;
+}
+
+.header-2 .about a{
+    /*font-variant:small-caps;*/
+    font-size:30px;
+    color:rgb(198, 189, 60);
+    outline-style:groove;
+    border: 3px outset black;
+    margin:60px;
+    padding-left:95px;
+    padding-right:95px;
+}
+
+legend{
+    font-variant:small-caps;
+    font-size: 50px;
+    color:darkkhaki;
+    padding: 5px 10px;
+}
+
+input{
+    margin: 5px;
+}
+
+
+
